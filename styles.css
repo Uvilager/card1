@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.card {
+    z-index: 1;
+    font-family: 'Kumbh Sans';
+    display: grid;
+    grid-template-columns: 325px;
+    grid-template-rows: 140px 140px 90px;
+    grid-template-areas: "filler" "text" "stats";
+    background: white;
+    border-radius: 18px;    
+    
+}  
+
+.filler {
+    grid-area: filler;
+    background-image: url("images/bg-pattern-card.svg");
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+}
+
+.image {
+    background-image: url("images/image-victor.jpg");
+    border-radius: 50%;
+    border: white 5px solid;
+    position: absolute;
+    padding: 48px;
+    left: 50%;
+    margin-left: -48px;
+    margin-top: 87px;
+}
+
+.text {
+    text-align: center;
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+}
+
+.bio {
+    margin-top: 43px;
+}
+
+.nameAndAge {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.value, .nameAndAge {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.type, .city, .age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.age {
+    padding-left: 4px;
+}
+
+.value {
+    padding-bottom: 5px;
+}
+
+.type, .city{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.info {
+    border-top: ridge 2px ;
+    display: grid;
+    grid-area: stats;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
