@@ -27,7 +27,7 @@ body {
 
 .card {
     z-index: 1;
-    font-family: 'Kumbh Sans';
+    font-family: 'Kumbh Sans', sans-serif;
     display: grid;
     grid-template-columns: 325px;
     grid-template-rows: 140px 140px 90px;
