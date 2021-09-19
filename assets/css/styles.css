@@ -1,0 +1,147 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/images/bg-pattern-top.svg"), url("/assets/images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #19a2ae;
+}
+
+body .card {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "Kumbh Sans", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 325px;
+      grid-template-columns: 325px;
+  -ms-grid-rows: 140px 140px 90px;
+      grid-template-rows: 140px 140px 90px;
+      grid-template-areas: 'filler' 'text' 'stats';
+  background: white;
+  border-radius: 18px;
+}
+
+body .card .filler {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: filler;
+  background-image: url("/assets/images/bg-pattern-card.svg");
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-size: cover;
+}
+
+body .card .image {
+  -webkit-box-shadow: 0px -1px 1px 0px rgba(50, 50, 50, 0.2);
+          box-shadow: 0px -1px 1px 0px rgba(50, 50, 50, 0.2);
+  background-image: url("/assets/images/image-victor.jpg");
+  border-radius: 50%;
+  border: white 5px solid;
+  position: absolute;
+  padding: 48px;
+  left: 50%;
+  margin-left: -53px;
+  margin-top: 87px;
+}
+
+body .card .text {
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .card .text .bio {
+  margin-top: 43px;
+}
+
+body .card .text .bio .nameAndAge {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+body .card .text .bio .nameAndAge .age {
+  color: #6a6f81;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+body .card .text .bio .city {
+  color: #6a6f81;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+body .card .info {
+  padding: 0 20px;
+  border-top: #e5e5e5 1px solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: stats;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+body .card .info .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .card .info .stats .value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+  padding-bottom: 5px;
+}
+
+body .card .info .stats .type {
+  color: #6a6f81;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=styles.css.map */
